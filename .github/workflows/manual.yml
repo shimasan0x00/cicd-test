@@ -8,9 +8,15 @@ on:
                 default: HELLO
                 required: true
                 description: A cheerful word
+            log-level:
+                type: choice
+                options:
+                    - info
+                    - debug
+                    - error
 
 jobs:
     run-manual-id:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "${{inputs.greeting}}"
+            - run: echo "${{inputs.greeting}} log-level ${{inputs.log-level}}"
