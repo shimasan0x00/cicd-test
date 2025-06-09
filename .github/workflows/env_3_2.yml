@@ -1,5 +1,7 @@
 name: Environment variables check
-on: push
+# on: push
+on:
+    workflow_dispatch:
 env:
     EXAMPLE: Defined by workflow level
 
