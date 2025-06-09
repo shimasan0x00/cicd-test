@@ -1,0 +1,10 @@
+name: If condition
+on:
+    workflow_dispatch:
+jobs:
+    if_check:
+        runs-on: ubuntu-latest
+        steps:
+            - run: exit 1
+            - run: echo "HELLO"
+              if: ${{ failure() }}
