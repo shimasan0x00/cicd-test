@@ -8,3 +8,8 @@ jobs:
             - run: echo "${CONTEXT}"
               env:
                 CONTEXT: ${{ toJson(github)}}
+
+            - uses: actions/checkout@v4
+            - run: echo "${HASH}"
+              env:
+                HASH: ${{ hashFiles('.github/workflows/*.yml') }} # ハッシュ値の生成
