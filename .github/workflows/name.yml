@@ -1,0 +1,10 @@
+name: Name
+on:
+  workflow_dispatch:
+jobs:
+  print-job:
+    name: Super Useful Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Amazing Script
+        run: echo "HELLO Amazing Script"
