@@ -10,3 +10,8 @@ jobs:
       - env:
           RESULT: ${{ steps.source.outputs.result}}
         run: echo "${RESULT}"
+  env-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ENV_RESULT=Helllo ENV" >> "${GITHUB_ENV}"
+      - run: echo "${ENV_RESULT}"
