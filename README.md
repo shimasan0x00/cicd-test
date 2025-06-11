@@ -1,4 +1,5 @@
 # cicd-test
+GitHub CI/CD 実践ガイドの内容を実践するリポジトリ
 
 ## Variables
 
