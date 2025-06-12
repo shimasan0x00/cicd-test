@@ -1,0 +1,11 @@
+name: Log Mask
+on:
+  workflow_dispatch:
+jobs:
+  log-mask:
+    runs-on: ubuntu-latest
+    env:
+      MASKPASSWORD: SuperSecret
+    steps:
+      - run: echo "::add-mask::${MASKPASSWORD}"
+      - run: echo "${MASKPASSWORD}"
