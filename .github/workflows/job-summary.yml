@@ -1,0 +1,11 @@
+name: Job Summary
+on:
+  workflow_dispatch:
+jobs:
+  job-summary:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "## Example Title :rocket:" >> "${GITHUB_STEP_SUMMARY}"
+          echo "- first list item" >> "${GITHUB_STEP_SUMMARY}"
+          echo "- second list item" >> "${GITHUB_STEP_SUMMARY}"
