@@ -1,0 +1,12 @@
+name: Bash Trace
+on:
+  workflow_dispatch:
+jobs:
+  log-trace:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug commands
+        run: |
+          set -x
+          date
+          hostname
