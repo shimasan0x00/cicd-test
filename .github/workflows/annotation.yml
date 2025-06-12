@@ -1,0 +1,10 @@
+name: Annotation
+on:
+  workflow_dispatch:
+jobs:
+  annotation:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::error::this is an error msg"
+      - run: echo "::warning::this is a warning msg"
+      - run: echo "::notice::this is a notice msg"
