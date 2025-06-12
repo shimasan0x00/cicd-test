@@ -5,7 +5,7 @@ jobs:
   log-mask:
     runs-on: ubuntu-latest
     env:
-      MASKPASSWORD: SuperSecret
+      MASK: SuperSecret
     steps:
-      - run: echo "::add-mask::${MASKPASSWORD}"
-      - run: echo "${MASKPASSWORD}"
+      - run: echo "::add-mask::${MASK}"
+      - run: echo "${MASK}"
