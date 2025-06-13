@@ -16,4 +16,4 @@ jobs:
       PASS: ${{secrets.PASS}}
     steps:
       - run: echo "${USERNAME}"
-      - run: echo "${PASS:0:1} ${PASS$?}"
+      - run: echo "${PASS:0:1} ${PASS#?}"
