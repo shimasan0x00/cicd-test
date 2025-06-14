@@ -6,10 +6,10 @@ inputs:
   enable-context:
     default: 'true'
     required: false
-    description: 'githubコンテキストをログに出力するか
+    description: 'githubコンテキストをログに出力するか'
 outputs:
   dumped-date:
-    value: ${{ steps.current.outputs.date}}
+    value: ${{ steps.current.outputs.date }}
     description: ダンプした日付
 
 runs:
@@ -18,7 +18,7 @@ runs:
     - run: printenv | sort
       shell: bash
     - run: echo "${CONTEXT}"
-      if: ${{ inputs.enable-context == 'true'}}
+      if: ${{ inputs.enable-context == 'true' }}
       env:
         CONTEXT: ${{ toJson(github) }}
       shell: bash
