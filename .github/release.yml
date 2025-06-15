@@ -8,7 +8,7 @@ changelog:
         - bug
         - fixes
   exclude:
-    - labels:
+    labels:
       - dependencies
     authors:
       - dependabot
