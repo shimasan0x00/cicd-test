@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "Helo World CI/CD"
-            - uses: actions/checkout@v5
+            - uses: actions/checkout@v6
